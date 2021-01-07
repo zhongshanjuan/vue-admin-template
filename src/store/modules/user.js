@@ -6,6 +6,7 @@ const getDefaultState = () => {
   return {
     token: getToken(),
     name: '',
+    // 头像
     avatar: ''
   }
 }
@@ -13,6 +14,7 @@ const getDefaultState = () => {
 const state = getDefaultState()
 
 const mutations = {
+  // 重置state
   RESET_STATE: (state) => {
     Object.assign(state, getDefaultState())
   },
